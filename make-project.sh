@@ -17,9 +17,12 @@ $(PREF_OBJ)%.o: $(PREF_SRC)%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	rm -rf $(TARGET) $(PREF_OBJ)*.o' > Makefile
-touch README.txt && echo 'name: $1
-date:
-goal: '
+CURRENT_DATE=$(date)
+CREATOR=$(USER)
+touch README.txt && echo 'Hi! :D I\'m $CREATOR and I\'m learning the c programming language
+project name: ...
+date: $CURRENT_DATE
+goal: ...' > README.txt
 cd src && touch main.c
 echo '#include <stdio.h>
 int main() {
