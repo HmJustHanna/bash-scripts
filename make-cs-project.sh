@@ -1,4 +1,5 @@
 #!/bin/bash
+
 touch $1.cs
 echo "using System;
 namespace $1{
