@@ -1,7 +1,11 @@
 #!/bin/bash
+#
+#script for quick update of my dotfiles
+#
 
 cp $HOME/.vimrc $HOME/dotfiles/.vimrc 
 cp $HOME/.bashrc $HOME/dotfiles/.bashrc
+cp $HOME/.bash_profile $HOME/dotfiles/.bash_profile
 
 cp $HOME/.Xresources $HOME/dotfiles/.Xresources
 cp $HOME/.xinitrc $HOME/dotfiles/.xinitrc
