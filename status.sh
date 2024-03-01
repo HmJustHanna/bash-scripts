@@ -1,7 +1,7 @@
 #!/bin/bash
 while true; do
-	#xsetroot -name "$(date)"
     BAT=$(cat /sys/class/power_supply/BAT1/capacity)
-	xsetroot -name "BAT: $BAT% $(date '+ %H:%M %a')"
+    AUDIO=$(mocp -i | grep File | awk -F '/' '{print $NF}')
+    xsetroot -name "NOW: $AUDIO BAT: $BAT% $(date '+ %H:%M %a') $(dwm -v)"
 	sleep 60
-done&
+done &
