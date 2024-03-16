@@ -8,4 +8,4 @@ while true; do
     DM=$(cd $HOME/suckless/dmenu && git status -s | wc -l)                          #git status for dwm
     xsetroot -name "DOTS: $DOTS SH: $SH DWM: $DWM DM: $DM | BAT: $BAT% $(date '+ %H:%M')"   #show in dwm bar
     sleep 60                                                                        #update every min
-done &
+done
