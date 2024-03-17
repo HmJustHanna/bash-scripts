@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 #script: notify me about percentage of battery (BAT1) 
+#author: Anna Evdokimova (@HmJustHanna on github.com)
 #
 
 while true; do

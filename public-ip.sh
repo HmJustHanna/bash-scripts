@@ -1,4 +1,10 @@
 #!/bin/bash 
+#
+#script: get notification about your public ip
+#usage: public-ip.sh
+#author: ?
+#
+
 IP_MSG="$(curl --no-progress-meter http://ifconfig.io 2>&1)" 
 STATUS=$? 
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 #script: notify me is numlock on/off when I press NumLock
+#author: Anna Evdokimova (@HmJustHanna on github.com)
 #
 #I bind XK_Num_Lock to execution of this script 
 #And now Idk why, but without "sleep 0.1" notification is always "on" if I press numlock. 

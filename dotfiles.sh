@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-#script for quick update of my dotfiles
+#script: quick update of my dotfiles
+#author: Anna Evdokimova (@HmJustHanna on github.com)
 #
 
 cp $HOME/.vimrc $HOME/dotfiles/.vimrc 

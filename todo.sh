@@ -1,11 +1,8 @@
 #!/bin/sh
 #
-# Write/remove a task to do later.
-#
-# Select an existing entry to remove it from the file, or type a new entry to
-# add it.
-#
-#script from http://tools.suckless.org/dmenu/scripts/
+#script: write/remove a task to do later.
+#usage: select an existing entry to remove it from the file, or type a new entry to add it.
+#author: http://tools.suckless.org/dmenu/scripts/
 #
 
 
