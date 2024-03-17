@@ -1,13 +1,14 @@
 #!/bin/bash
 #
-#script: rename file names by removing spaces
+#script: rename ugly file names from net
 #
 
 #for tr
 
 for f in *
 do
-    mv "$f" `echo "$f" | tr " []()_" "-" | tr -d "' " | tr -s "-"`;
+    EXT=
+    mv "$f" `echo "$f" | tr " []()_" "-" | tr -d "'" | tr -s "-"`;
 done
 
 #ls sed

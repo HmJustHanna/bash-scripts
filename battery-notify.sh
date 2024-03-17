@@ -11,5 +11,5 @@ while true; do
     elif [ "$BAT" -le "15" ]; then                                                  #if battery less than 15%
         notify-send -u critical 'Warning!' "low battery"                            #notify me with urgency "critical"
     fi
-    sleep 120                                                                       #check every 2 min
+    sleep 300                                                                       #check every 5 min
 done 
