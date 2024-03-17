@@ -5,9 +5,9 @@
 
 #for tr
 
-for i in *
+for f in *
 do
-    mv "$i" `echo "$i" | tr ' ' '-' | tr -d "' []()"`;
+    mv "$f" `echo "$f" | tr " []()_" "-" | tr -d "' " | tr -s "-"`;
 done
 
 #ls sed
