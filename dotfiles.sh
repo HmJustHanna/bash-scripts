@@ -12,8 +12,8 @@ cp $HOME/.gitconfig $HOME/dotfiles/.gitconfig
 cp $HOME/.Xresources $HOME/dotfiles/.Xresources
 cp $HOME/.xinitrc $HOME/dotfiles/.xinitrc
 
-cp $HOME/.config/zathura/zathurarc $HOME/dotfiles/.zathurarc
-cp $HOME/.config/htop/htoprc $HOME/dotfiles/.htoprc
+cp $HOME/.config/zathura/zathurarc $HOME/dotfiles/zathurarc
+cp $HOME/.config/htop/htoprc $HOME/dotfiles/htoprc
 
 cp /etc/pacman.conf $HOME/dotfiles/pacman.conf
 

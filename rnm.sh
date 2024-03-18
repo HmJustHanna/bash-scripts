@@ -4,18 +4,24 @@
 #author: Anna Evdokimova (@HmJustHanna on github.com)
 #
 
-#for tr
-
-for f in *
+#EXT=
+ls|while read f
 do
-    EXT=
-    mv "$f" `echo "$f" | tr " []()_" "-" | tr -d "'" | tr -s "-"`;
+    while getopts 'hnu' OPTION; do
+        case "$OPTION" in
+            h)
+                mv "$f" `echo "$f" | tr " ,[]()_" "-" | tr -d "'" | tr -s "-"`
+                ;;
+            n)
+                mv "$f" `echo "$f" | tr " ,[]()-" "_" | tr -d "[:digit:]" | tr -s "_"`
+                ;;
+            u)
+                mv "$f" `echo "$f" | tr " ,[]()-" "_" | tr -d "'" | tr -s "_"`
+                ;;
+            ?)
+                echo "usage: $(basename "$0") -[n]umber -[u]nderscore" >&2
+                exit 1
+                ;;
+        esac
+    done
 done
-
-#ls sed
-
-#ls | while read file;
-#do
-#    mv "$file" "$(echo "$file" | sed -e 's/\ /-/g' 's/'//g')";
-#done
-
