@@ -21,20 +21,14 @@ clean:
 	rm -rf $(TARGET) $(PREF_OBJ)*.o' > Makefile
 	
 CURRENT_DATE=$(date)
-CREATOR="$USER"
+AUTHOR="$USER"
 touch README.txt
-echo "Hi, I'm $CREATOR and I'm learning the c programming language :D 
+echo "about:
+author: $AUTHOR
+start: $CURRENT_DATE
+finish:
 
-PROJECT:
-
-NAME: $1
-TASKS:
-*
-*
-*
-------------------------------
-START: $CURRENT_DATE
-END:" > README.txt
+" > README.txt
 
 cd src && touch main.c
 echo '#include <stdio.h>
