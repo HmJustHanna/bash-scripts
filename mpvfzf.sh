@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd $HOME/Media/Videos
+cd $HOME/Media/videos
 fzf | xargs mpv
