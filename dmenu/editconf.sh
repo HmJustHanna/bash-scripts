@@ -10,10 +10,10 @@ declare -a list=(
 "xinit - $HOME/.xinitrc"
 )
 
-selected=$(printf '%s\n' "${list[@]}" | dmenu -i -l 10 -p 'edit:')
+choice=$(printf '%s\n' "${list[@]}" | dmenu -i -l 10 -p 'edit:')
 
-if [ "$selected" ]; then
-    config=$(printf '%s\n' "${selected}"| awk '{print $NF}')
+if [ "$choice" ]; then
+    config=$(printf '%s\n' "${choice}" | awk '{print $NF}')
     $EDITOR "$config"
 else
     echo "exit" && exit 1
