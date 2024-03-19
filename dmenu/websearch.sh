@@ -46,21 +46,9 @@ xprop -root | grep '^_NET_ACTIVE_WINDOW' && {
 	case "$class" in
 		Firefox) nbrowser='firefox' ;;
 		#Firefox) shortcut='ctrl+l' ;; # alternative method, uses xdotool
-		IceCat) nbrowser='icecat' ;;
-		Chromium) nbrowser='chromium' ;;
-		Chrome) nbrowser='chrome' ;;
-		Opera) nbrowser='opera' ;;
-		Vivaldi) nbrowser='vivaldi' ;; # not tested
-		Brave) nbrowser='brave' ;; # not tested
-		Conkeror) nbrowser='conkeror' ;; # not tested
-		Palemoon) nbrowser='palemoon' ;; # not tested
-		Iceweasel) nbrowser='iceweasel' ;; # not tested
 		qutebrowser) nbrowser='qutebrowser' ;;
-		Midori) nbrowser='midori' ;; # not that good
-		Luakit) nbrowser='luakit' ;; # uses the last window instance
 		Uzbl|Vimb) shortcut='o' ;;
 		Links) shortcut='g' ;;
-		Netsurf*|Epiphany|Dillo|Konqueror|Arora) shortcut='ctrl+l' ;;
 		Surf) nbrowser='surf' ; uricur=$(xprop -id "$winid" _SURF_URI |\
 				awk -F'\"' '{ print $( NF - 1 ) }') ;;
 		*) pid=$(xprop -id "$winid" _NET_WM_PID | awk '{ print $3 }')
@@ -83,7 +71,7 @@ trap 'rm "$tmpfile"' 0 1 15
 printf '%s\n%s\n' "$uricur" "$1" > "$tmpfile"
 cat "$bookmarks" >> "$tmpfile"
 sed -i -E '/^(#|$)/d' "$tmpfile"
-choice=$(dmenu -i -p "search:" -w "$winid" < "$tmpfile") || exit 1
+choice=$(dmenu -l 10 -i -p "search:" -w "$winid" < "$tmpfile") || exit 1
 
 # Detect links without protocol (This is WIP)
 protocol='^(https?|ftps?|mailto|about|file):///?'
