@@ -7,6 +7,7 @@
 cp $HOME/.vimrc $HOME/dotfiles/.vimrc 
 cp $HOME/.bashrc $HOME/dotfiles/.bashrc
 cp $HOME/.bash_profile $HOME/dotfiles/.bash_profile
+cp $HOME/.inputrc  $HOME/dotfiles/.inputrc
 cp $HOME/.gitconfig $HOME/dotfiles/.gitconfig
 
 cp $HOME/.Xresources $HOME/dotfiles/.Xresources
