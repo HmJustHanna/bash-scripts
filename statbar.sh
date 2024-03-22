@@ -5,7 +5,8 @@ while true; do
     DOTS=$(cd $HOME/dotfiles && git status -s | wc -l)                              #git status for dotfiles
     SH=$(cd $HOME/.local/bin && git status -s | wc -l)                              #git status for dotfiles
     DWM=$(cd $HOME/suckless/dwm && git status -s | wc -l)                           #git status for dwm
-    DM=$(cd $HOME/suckless/dmenu && git status -s | wc -l)                          #git status for dwm
-    xsetroot -name " DOTS: $DOTS SH: $SH DWM: $DWM DM: $DM BAT: $BAT% "               #show in dwm bar
+    DM=$(cd $HOME/suckless/dmenu && git status -s | wc -l)                          #git status for dmenu
+    DATE=$(date "+%H:%M")
+    xsetroot -name " DOTS: $DOTS SH: $SH DWM: $DWM DM: $DM BAT: $BAT% $DATE "
     sleep 60                                                                        #update every min
 done
