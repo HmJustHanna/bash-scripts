@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-#script: generate password of uppercase and lowercase letters and numbers
-#usage: randpass.sh NUMBER
-#author: Anna Evdokimova (@HmJustHanna on github.com)
+#about:     generate password of letters and numbers
+#usage:     randpass.sh NUMBER
+#author:    Anna Evdokimova (@HmJustHanna on github.com)
 #
 
 NUM="$1"

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-#script: rename ugly file names from net
-#author: Anna Evdokimova (@HmJustHanna on github.com)
+#about:     rename unreadable file names from the net
+#author:    Anna Evdokimova (https://github.com/HmJustHanna/)
 #
 
 #EXT=
