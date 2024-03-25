@@ -32,6 +32,6 @@ cp $HOME/.config/ytfzf/subscriptions $DOTFILES/ytfzf
 
 # MISC
 
-cp $HOME/Documents/bookmarks.txt $HOME/.local/bin/dmenu/bookmarks-web-search.txt
+cp $HOME/Documents/bookmarks.txt $HOME/.local/bin/dmenu/bookmarks-websearch.txt
 cp $HOME/.config/zathura/zathurarc $DOTFILES/
 cp $HOME/.config/htop/htoprc $DOTFILES/

@@ -1,8 +1,9 @@
-https://suckless.org/
 https://archlinux.org/
+https://suckless.org/
+https://github.org/
 https://github.com/HmJustHanna/
 https://github.com/lukesmithxyz/
+https://rutracker.org/forum/index.php
+https://mail.yandex.ru/lite
 https://www.abbreviations.com/
 https://irssi.org/
-https://mail.yandex.ru/lite
-
