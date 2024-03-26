@@ -1,6 +1,6 @@
 # About
 
-[]().
+Some scripts have a description at the beginning of the file.
 
 # Screenshots
 
@@ -13,5 +13,4 @@
 ![rename.sh](/assets/rename.png)
 
 ![todo.sh](/assets/todo.png)
-
 
