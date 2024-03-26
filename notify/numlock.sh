@@ -14,6 +14,6 @@ if [ "$NUMLOCK" = "00000002" ] || [ "$NUMLOCK" = "00000003" ]; then #if numclock
 else
     STATUS="numlock off"
 fi
-notify-send -t 2000 "$STATUS" -r 9923                               #notify me for 2 sec.
+notify-send -t 10000 "$STATUS" -r 9923                               #notify me for 2 sec.
                                                                     #"-r" means "replace notification ID",
                                                                     #so previous notification will dissappear 
